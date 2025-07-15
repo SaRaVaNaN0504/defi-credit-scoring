@@ -72,31 +72,32 @@ The resulting raw scores are scaled again to produce the final **0 to 1000** cre
 To replicate the results, follow these steps:
 
 **1. Clone the repository:**
-```bash
+
 git clone <your-repo-url>
 cd DEFI-CREDIT-SCORING
 
-** 2.Create and activate a virtual environment:
-# Create the environment
+**2.Create and activate a virtual environment:**
+## Create the environment
 python -m venv venv
-
-# Activate it
-# On Windows:
+On Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+
+macOS/Linux:
 source venv/bin/activate
 
-** 3. Install the required dependencies:
+**3. Install the required dependencies:**
+
 pip install -r requirements.txt
 
-** 4.Place the data file:
+**4.Place the data file:**
 Download the dataset and ensure the user-wallet-transactions.json file is in the root of the project directory.
 
-** 5.Run the script:
+**5.Run the script:**
 python score_wallets.py
 
+---
 
-##Deliverables
+## Deliverables
 
 The script automatically generates the following files:
 wallet_scores.csv: A CSV file containing two columns: user (the wallet address) and credit_score.
