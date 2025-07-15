@@ -11,7 +11,7 @@ The primary goal is to create a robust and transparent credit scoring system bas
 ## Project Structure
 
 The repository is organized as follows:
-
+```
 DEFI-CREDIT-SCORING/
 ├── .venv/                      # Virtual environment
 ├── analysis.md                 # Auto-generated analysis of score distribution
@@ -21,7 +21,7 @@ DEFI-CREDIT-SCORING/
 ├── user-wallet-transactions.json  # The raw input data file (87MB)
 ├── wallet_scores.csv           # The final output with user addresses and scores
 ├── README.md                   # Project documentation
-
+```
 
 
 ---
