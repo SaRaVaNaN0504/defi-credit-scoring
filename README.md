@@ -12,6 +12,16 @@ The primary goal is to create a robust and transparent credit scoring system bas
 
 The repository is organized as follows:
 
+DEFI-CREDIT-SCORING/
+├── .venv/                      # Virtual environment
+├── analysis.md                 # Auto-generated analysis of score distribution
+├── explore_data.py             # Initial script for data exploration (optional)
+├── score_distribution.png      # Auto-generated histogram of credit scores
+├── score_wallets.py            # The main, one-step script for the entire process
+├── user-wallet-transactions.json  # The raw input data file (87MB)
+├── wallet_scores.csv           # The final output with user addresses and scores
+├── README.md                   # Project documentation
+
 
 
 ---
@@ -65,3 +75,30 @@ To replicate the results, follow these steps:
 ```bash
 git clone <your-repo-url>
 cd DEFI-CREDIT-SCORING
+
+** 2.Create and activate a virtual environment:
+# Create the environment
+python -m venv venv
+
+# Activate it
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+** 3. Install the required dependencies:
+pip install -r requirements.txt
+
+** 4.Place the data file:
+Download the dataset and ensure the user-wallet-transactions.json file is in the root of the project directory.
+
+** 5.Run the script:
+python score_wallets.py
+
+
+##Deliverables
+
+The script automatically generates the following files:
+wallet_scores.csv: A CSV file containing two columns: user (the wallet address) and credit_score.
+score_distribution.png: A histogram visualizing the distribution of the calculated credit scores.
+analysis.md: An auto-generated markdown file containing a detailed breakdown of the score distribution and statistical summaries for high-risk and low-risk wallet categories.
